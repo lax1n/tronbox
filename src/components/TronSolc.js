@@ -27,14 +27,14 @@ function getWrapper(options = {}) {
   catch (e) {
   }
 
-  let compilerVersion = '0.5.4'
+  let compilerVersion = '0.5.8'
   const solcDir = path.join(homedir(), '.tronbox', 'solc')
 
   if (options.networks) {
     if (options.networks.useZeroFourCompiler) {
       compilerVersion = '0.4.25'
     } else if (options.networks.useZeroFiveCompiler) {
-      compilerVersion = '0.5.4'
+      compilerVersion = '0.5.8'
     }
 
     try {

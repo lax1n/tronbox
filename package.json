@@ -1,6 +1,6 @@
 {
   "name": "loanbox",
-  "version": "2.8.2",
+  "version": "2.8.3",
   "description": "Loanbox (TronBox) - forked by lax1n - Simple development framework for Tron",
   "dependencies": {
     "@truffle/contract-sources": "^0.1.6",

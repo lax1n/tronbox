@@ -9,9 +9,9 @@ function CompileError(message) {
   let fancy_message = message.trim() + '\n' + colors.red('Compilation failed. See above.')
   let normal_message = message.trim()
 
-  if (/0\.5\.4/.test(normal_message) && !!~normal_message.indexOf('Source file requires different compiler version')) {
+  if (/0\.5\.8/.test(normal_message) && !!~normal_message.indexOf('Source file requires different compiler version')) {
     normal_message = normal_message.split('ParserError:')[0]
-      + '\nParserError: Source file requires different compiler version (current compiler is 0.5.4+commit.7b0de266.mod.Emscripten.clang)'
+      + '\nParserError: Source file requires different compiler version (current compiler is 0.5.8+commit.7b0de266.mod.Emscripten.clang)'
     fancy_message = normal_message + '\n' + colors.red('Compilation failed. See above.')
   }
 
