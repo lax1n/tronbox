@@ -1,8 +1,7 @@
 {
-  "name": "tronbox",
-  "namespace": "tronprotocol",
+  "name": "loanbox",
   "version": "2.7.10",
-  "description": "TronBox - Simple development framework for Tron",
+  "description": "Loanbox (TronBox) - forked by lax1n - Simple development framework for Tron",
   "dependencies": {
     "@truffle/contract-sources": "^0.1.6",
     "@truffle/error": "0.0.7",
@@ -73,7 +72,7 @@
   },
   "scripts": {
     "test": "echo \"Error: tests will be fixed soon in a new release\" && exit 1",
-    "prepare": "npm run build",
+    "prepare": "yarn run build",
     "lint": "find src -name '*.js' | xargs node_modules/.bin/eslint",
     "build": "scripts/build.sh"
   },

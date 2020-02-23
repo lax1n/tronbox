@@ -7,7 +7,7 @@ const Deployed = {
     const self = this
 
     let source = ''
-    source += 'pragma solidity ^0.4.17; \n\n library DeployedAddresses {' + '\n'
+    source += 'pragma solidity ^0.5.8; \n\n library DeployedAddresses {' + '\n'
 
     Object.keys(mapping).forEach(function (name) {
       let address = mapping[name]

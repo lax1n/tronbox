@@ -67,7 +67,7 @@ module.exports = {
       if (fs.existsSync(file_path)) {
         contents = fs.readFileSync(file_path, {encoding: 'UTF-8'})
       } else {
-        contents = 'pragma solidity ^0.4.0;'
+        contents = 'pragma solidity ^0.5.8;'
       }
       return {contents: contents}
     })
